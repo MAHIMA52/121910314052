@@ -1,0 +1,15 @@
+n1=int(input("enter first number: "))
+n2=int(input("enter second number: "))
+n3=int(input("enter third number: "))
+if n1<n2 and n1<n3:
+    smallest=n1
+elif n2<n1 and n2<n3:
+    smallest=n2
+else:
+    smallest=n3
+print("smallest of three numbers is ",smallest)
+OUTPUT
+enter first number: 1
+enter second number: 4
+enter third number: 8
+smallest of three numbers is  1
