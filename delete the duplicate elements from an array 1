@@ -1,0 +1,16 @@
+first_list = [1, 2, 2, 3, 3, 3, 4, 5, 5, 6]
+ 
+# Convert to a set first
+set_list = set(first_list)
+ 
+# Now convert the set into a List
+print(list(set_list))
+ 
+second_list = [2, 3, 3, 2, 5, 4, 4, 6]
+ 
+# Does the same as above, in a single line
+print(list(set(second_list)))
+
+OUTPUT
+[1, 2, 3, 4, 5, 6]
+[2, 3, 4, 5, 6]
