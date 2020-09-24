@@ -1,0 +1,29 @@
+def linearsearch(arr,elem):
+    for i in range(len(arr)):
+        if(arr[i] == elem):
+            return i+1
+        else:
+            continue
+    return -1
+    
+limit = int(input("Enter the limit : "))
+arry = []
+for i in range(0,limit):
+    ele = input("Enter alphabet : ")
+    arry.append(ele)
+    
+findele = input('Enter element to find : ')
+pos = str(linearsearch(arry,findele))
+print("The element found at index "+pos)
+
+OUTPUT
+Enter the limit : 7
+Enter alphabet : m
+Enter alphabet : a
+Enter alphabet : h
+Enter alphabet : i
+Enter alphabet : m
+Enter alphabet : a
+Enter alphabet : s
+Enter element to find : s
+The element found at index 7
